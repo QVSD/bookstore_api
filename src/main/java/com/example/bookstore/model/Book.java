@@ -2,7 +2,7 @@ package com.example.bookstore.model;
 import jakarta.persistence.*;
 
 @Entity
-public class Bookstore{
+public class Book {
 
     @Id @GeneratedValue
     private Long id;
@@ -11,7 +11,7 @@ public class Bookstore{
     private String category;
     private int noOfPages;
 
-    public Bookstore (){};
+    public Book(){};
 
     public Long getId(){return id;}
     public void setId(Long id){ this.id = id;}
