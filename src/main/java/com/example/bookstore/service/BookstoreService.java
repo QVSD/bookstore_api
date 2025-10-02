@@ -7,7 +7,7 @@ import com.example.bookstore.repository.BookstoreRepository;
 import org.springframework.stereotype.Service;
 
 
-// Service is being used so it can use the data so it can implement the application logic
+// Service is being used so it can use the stored data so it can implement the application logic
 // From my understanding we are using the repository as a support for methods, like we would've used
 // addAll(), or sort(), or another helpful method for some datatype.
 // But in this case we are using that so we can manipulate data easily without having to implement
@@ -36,7 +36,7 @@ public class BookstoreService {
         * but those are not the exact object in the database. What this does is that : 
         * @id - represents the id of the book that I would like to modify
         * @updatedBookBody - it's the actual new object containing the new details of the already stored book, 
-        *               that I am willing
+        *               that I am willing to modify
         *              - to be even more specific, I query to the Database to update the Book at that @id
         *               with the new body of the book which is @updatedBookBody
         * Therefore the steps implemented here are : 
@@ -52,7 +52,7 @@ public class BookstoreService {
         *           Considering that analogy with the Dog and bark() method, and blueprints and objects:
         *           Here for the bookstoreRepository we can consider it as a blueprint for a responsibility.
         *           ("doesn't exist as a physical object")
-        *            Only in this case because we are still making a paralel between Real thing object and Responsibility
+        *            Only in this case because we are still making a parallel between Real thing object and Responsibility
         *           object, we will continue considering it as the secretary which has those special methods, to certify
         *           the salary that we are paying her within our BookStore :D
         * 
